@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+header.main-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
+    url("https://drive.google.com/uc?id=1nJRGpGL8E2LEeuKzV6PpbEqSxn7abXu6");
+  background-position-y: center;
+  background-size: cover;
+}
+
+header.main-header div.container {
+  height: 300px;
+  text-align: center;
+  color: #fff;
+  padding-top: 100px;
+}
+
+header.main-header div.container h1 {
+  font-size: 60px;
+  margin: 10px;
+}
+
+header.main-header div.container span {
+  font-size: 25px;
+}
+
+header.main-header div.container a {
+  color: #fff;
+  background-color: rgb(9, 9, 70);
+  border: 2px solid #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 5px 20px;
+}
+
+header.main-header div.container a:hover {
+  color: rgb(9, 9, 70);
+  background-color: #fff;
+  border-color: none;
+}
+
+section.projects {
+  opacity: 1;
+}
+
+section.projects div.container {
+  width: 80vw;
+  margin: 50px auto;
+  background-color: #e0e0e0;
+}
+
+section.projects div.container:hover {
+  box-shadow: 5px 5px 20px rgb(46, 45, 45);
+  transition: 0.2s ease-in;
+}
+
+section.projects div.container div.img {
+  background-color: orangered;
+  float: left;
+  height: 200px;
+  width: 25%;
+}
+
+section.projects div.container div.img img {
+  width: 30vw;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+}
+
+section.projects div.container div.matter {
+  width: 75%;
+  float: left;
+  color: #000;
+  height: 500px;
+  padding-left: 200px;
+  padding-top: 170px;
+  font-size: 25px;
+  /* padding-right: 15px; */
+}
+
+section.projects div.container::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.heading {
+  padding: 5px;
+  margin: 15px 5px;
+  border-bottom: 3px solid rgb(241, 67, 14);
+  display: inline-block;
+  color: rgb(241, 67, 14);
+  font-size: 35px;
+}
+
+/* @media (max-width: 500px) {
+  section.projects div.container {
+    width: 90%;
+    margin: 10px auto;
+  }
+  section.projects div.container div.matter {
+    float: none;
+    width: 100%;
+  }
+  section.projects div.container div.img {
+    float: none;
+    width: 100%;
+  }
+  section.projects div.container div.img img {
+    width: 100%;
+  }
+} */
+
+@media (max-width: 500px) {
+  header.main-header {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
+    url("./projecthead.png"); */
+    background-position-y: center;
+    background-size: cover;
+  }
+  header.main-header div.container {
+    height: 100px;
+    text-align: center;
+    color: #fff;
+    padding-top: 5px;
+  }
+
+  header.main-header div.container h1 {
+    font-size: 30px;
+    margin: 5px;
+  }
+
+  header.main-header div.container span {
+    font-size: 16px;
+  }
+
+  header.main-header div.container a {
+    font-size: 10px;
+  }
+
+  section.projects div.container {
+    width: 100vw;
+    margin: 30px auto;
+    background-color: #e0e0e0;
+    display: block;
+    height: 95vh;
+  }
+
+  section.projects div.container div.img {
+    background-color: orangered;
+    float: none;
+    height: 50px;
+    width: 100vw;
+    display: block;
+  }
+
+  section.projects div.container div.img img {
+    width: 100vw;
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    margin-top: 70px;
+  }
+
+  section.projects div.container div.matter {
+    width: 100vw;
+    float: none;
+    color: #000;
+    height: 50vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 350px;
+    font-size: 16px;
+  }
+
+  .heading {
+    padding: 5px;
+    margin: 5px 3px;
+    border-bottom: 2px solid rgb(241, 67, 14);
+    display: block;
+    color: rgb(241, 67, 14);
+    font-size: 20px;
+  }
+}
